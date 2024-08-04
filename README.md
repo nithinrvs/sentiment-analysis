@@ -47,4 +47,24 @@ Hyperparameter tuning is performed for two selected models:
 ### Logistic Regression
 - Accuracy: 72%
 
+## 6. Advanced Deep Learning Models
+
+### LSTM Model
+
+1. **Model Architecture:** The LSTM model consists of LSTM layers with dropout regularization and dense layers for classification.
+2. **Training Details:**
+   - **Epochs:** Trained over 20 epochs to optimize learning and model convergence.
+   - **Training Accuracy:** Achieved 51% accuracy on the training data, indicating moderate learning from the dataset.
+   - **Validation Accuracy:** Attained 47.5% accuracy on the validation set, which is lower compared to the Bi-Directional LSTM model, suggesting less effective performance.
+3.. **Evaluation:** The LSTM model showed lower accuracy compared to the Bi-Directional LSTM, highlighting potential limitations in capturing the complexity of sentiment analysis in Telugu text.
+
+### Bi-Directional LSTM Model
+
+1. **Model Architecture:** The model comprises Bi-Directional LSTM layers with dropout regularization to prevent overfitting. This architecture allows the model to capture contextual information from both past and future sequences, enhancing its understanding of Telugu reviews' sentiment.
+2. **Training Details:**
+   - **Epochs:** Trained over 10 epochs, optimizing the learning process.
+   - **Training Accuracy:** Achieved 100% accuracy on the training data, indicating a strong ability to learn from the dataset.
+   - **Validation Accuracy:** Attained 80% accuracy on the validation set, indicating good generalization but showing signs of overfitting due to the large gap between training and validation accuracies.
+3. **Evaluation:** While the model performed well in terms of accuracy, the significant difference between training and validation accuracies suggests potential overfitting issues that need to be addressed. Future work could focus on implementing techniques such as cross-validation, early stopping, and data augmentation to mitigate overfitting and improve generalization.
+
 
